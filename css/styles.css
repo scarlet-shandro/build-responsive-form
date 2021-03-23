@@ -1,2 +1,110 @@
 /* CSS Variables - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 
+/*white #fff
+dark blue #0d1238
+light blue #272f70
+Dark green #374d12
+light green #54761b*/
+
+:root {
+    --white: #fff;
+    --darkblue: #0d1238;
+    --lightblue: #272f70;
+    --darkgreen: #374d12;
+    --lightgreen: #54761b;
+}
+
+body {
+    font-family: sans-serif;
+    color: #fff;
+    background-image: url(..//img/oriental-tiles.png);
+}
+
+/*global typography*/
+
+h2 {
+    font-family: serif;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    padding: 0 0.75rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+
+/*form section*/
+
+section {
+    margin: 5rem 0;
+    padding: 1rem;
+    background-color: rgba(13, 18, 56, 0.7);
+}
+
+fieldset {
+    padding: 0;
+    border: none;
+    background-color: var(--white);
+    color: var(--darkblue);
+    border-radius: 5px;
+}
+
+fieldset > p {
+    background-color: var(--lightgreen);
+    color: var(--white);
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+fieldset > div {
+    padding: 0.75rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.flex-container > div {
+    flex: 0 1 50%;
+    margin-bottom: 0.75rem;
+}
+
+fieldset > div > label {
+    display: block;
+}
+
+fieldset > div > input {
+    width: 100%;
+    border: 1px solid #a2adb7;
+    background-color: #edeff0;
+    height: 2.5rem;
+    padding-left: 0.5rem;
+    border-radius: 5px;
+}
+
+fieldset > div > input[type=submit] {
+    background-color: var(--lightblue);
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+fieldset > div > input[type=submit]:hover {
+    background-color: var(--darkblue);
+    cursor: pointer;
+}
+
+fieldset a {
+    color: var(--lightgreen);
+    text-decoration: none;
+}
+
+fieldset a:hover {
+    color: var(--darkgreen);
+}
+
