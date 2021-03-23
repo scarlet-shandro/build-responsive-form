@@ -19,7 +19,6 @@ body {
     color: #fff;
     background-image: url(..//img/oriental-tiles.png);
 }
-
 /*global typography*/
 
 h2 {
@@ -107,4 +106,53 @@ fieldset a {
 fieldset a:hover {
     color: var(--darkgreen);
 }
+
+.checkbox {
+    text-align: left;
+    display: inline-flex;
+    overflow: auto;
+}
+
+.checkbox input {
+    margin: 0.5rem;
+}
+
+
+
+
+@media only screen and (min-width: 1000px) {
+    section{
+        display: flex;
+    }
+
+    section form{
+        width: 75%;
+    }
+
+    .title {
+        width: 25%;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+    section {
+        max-width: 1440px;
+        margin: 0 auto;   
+    }
+
+    section form {
+        width: 50%;
+    }
+
+    .title {
+        width: 50%;
+    }
+    
+}
+
+
+
+
 
